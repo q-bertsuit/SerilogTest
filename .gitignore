@@ -1,0 +1,63 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+bin
+ 
+build/*
+# Unignore the .target file excluded by the ignore of build directories above (since it is located in a build directory in packages)
+!build/Sekal.LegacyCode.targets 
+ 
+
+obj
+*.obj
+*.cache
+*.log
+*.tlog
+*.lastbuildstate
+ProjEntry.resx
+*.pch
+*.pdb
+
+# user settings
+*.user
+*.suo
+
+# ReSharper meta directory
+_ReSharper*
+
+# if you have pictures, windows will likely create those annoying index files
+Thumbs.db
+
+# Backup files
+*.orig
+*.bak
+
+# Wix build files
+.wixobj
+.wixpdb
+
+.vs
+*.VC.opendb
+*.sdf
+
+messages.svclog
+*.asv
+
+*.log.*
+*.log
+/packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.Build.Tasks.CodeAnalysis.dll
+Applications/Clients/Sekal.Client/binold/x64/IsLicense50.dll
+
+*.FileListAbsolute.txt
+
+/LegacyCode/cpp/common/Debug/Common.idb
+/LegacyCode/cpp/newmat/Debug/newmat.idb
+/LegacyCode/cpp/newran/Debug/newran.idb
+/LegacyCode/cpp/StateSpaceModels/Debug/StateSpaceModels.idb
+/LegacyCode/cpp/WellboreModelLib/Debug/WellboreModelLib.idb
+/LegacyCode/cpp/Wemod/Source/FluidModel/diniFlow/Debug/diniFlow.idb
+/LegacyCode/cpp/Wemod/Source/FluidModel/diniPVT/Debug/diniPVT.idb
+/LegacyCode/dll/win32/Wemod.dll
+/LegacyCode/dll/win32/Wemod.ilk
+/LegacyCode/lib/msvc/*.lib
+/LegacyCode/lib/msvc/Wemod.exp
+/LegacyCode/ThirdParties/f2c/libf2c/Debug/libf2c.idb
+*.recipe
