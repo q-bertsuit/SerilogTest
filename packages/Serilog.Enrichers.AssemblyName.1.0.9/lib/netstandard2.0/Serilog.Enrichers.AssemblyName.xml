@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Serilog.Enrichers.AssemblyName</name>
+    </assembly>
+    <members>
+        <member name="T:Serilog.AssemblyNameLoggerConfigurationExtensions">
+            <summary>
+            Extends <see cref="T:Serilog.LoggerConfiguration"/> to add enrichers for <see cref="T:System.Reflection.AssemblyName"/>.
+            capabilities.
+            </summary>
+        </member>
+        <member name="M:Serilog.AssemblyNameLoggerConfigurationExtensions.WithAssemblyName(Serilog.Configuration.LoggerEnrichmentConfiguration)">
+            <summary>
+            Enrich log events with an AssemblyName property containing the current <see cref="P:System.Reflection.AssemblyName.Name"/>.
+            </summary>
+            <param name="enrichmentConfiguration">Logger enrichment configuration.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.AssemblyNameLoggerConfigurationExtensions.WithAssemblyName``1(Serilog.Configuration.LoggerEnrichmentConfiguration)">
+            <summary>
+            Enrich log events with an AssemblyName property containing the current <see cref="P:System.Reflection.AssemblyName.Name"/> of T.
+            </summary>
+            <param name="enrichmentConfiguration">Logger enrichment configuration.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.AssemblyNameLoggerConfigurationExtensions.WithAssemblyVersion(Serilog.Configuration.LoggerEnrichmentConfiguration,System.Boolean)">
+            <summary>
+            Enrich log events with an AssemblyVersion property containing the current <see cref="P:System.Reflection.AssemblyName.Version"/>.
+            </summary>
+            <param name="enrichmentConfiguration">Logger enrichment configuration.</param>
+            <param name="useSemVer">Use semantic versioning.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.AssemblyNameLoggerConfigurationExtensions.WithAssemblyVersion``1(Serilog.Configuration.LoggerEnrichmentConfiguration,System.Boolean)">
+            <summary>
+            Enrich log events with an AssemblyVersion property containing the current <see cref="P:System.Reflection.AssemblyName.Version"/> of T.
+            </summary>
+            <param name="enrichmentConfiguration">Logger enrichment configuration.</param>
+            <param name="useSemVer">Use semantic versioning.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.AssemblyNameLoggerConfigurationExtensions.WithAssemblyInformationalVersion(Serilog.Configuration.LoggerEnrichmentConfiguration)">
+            <summary>
+            Enrich log events with an AssemblyVersion property containing the current <see cref="P:System.Reflection.AssemblyInformationalVersionAttribute.InformationalVersion"/> from the assembly.
+            </summary>
+            <param name="enrichmentConfiguration">Logger enrichment configuration.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Serilog.AssemblyNameLoggerConfigurationExtensions.WithAssemblyInformationalVersion``1(Serilog.Configuration.LoggerEnrichmentConfiguration)">
+            <summary>
+            Enrich log events with an AssemblyVersion property containing the current <see cref="P:System.Reflection.AssemblyInformationalVersionAttribute.InformationalVersion"/> from the assembly of T.
+            </summary>
+            <param name="enrichmentConfiguration">Logger enrichment configuration.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+    </members>
+</doc>
